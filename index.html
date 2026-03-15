@@ -2,53 +2,56 @@
 <html>
 <head>
 <title>Kiran Tech Lab</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.header {
+  background: #24292e;
+  color: white;
+  padding: 20px;
+}
+
+.section {
+  margin: 30px;
+}
+</style>
+
 </head>
 
 <body>
 
+<div class="header">
 <h1>Kiran Tech Lab</h1>
+<p>DevOps CI/CD Demonstration Project</p>
+</div>
 
-<h2>About</h2>
-<p>This website is created by <b>Kiran</b> to demonstrate a real-world DevOps CI/CD pipeline.</p>
-
+<div class="section">
 <h2>Project Flow</h2>
-<pre>
-Developer
-   ↓
-GitHub Repository
-   ↓
-Azure DevOps Pipeline
-   ↓
-Self-hosted Agent
-   ↓
-Deployment to AWS EC2
-   ↓
-Nginx Web Server
-   ↓
-https://kirantechlab.online
-</pre>
 
-<h2>Tools & Technologies Used</h2>
-<ul>
+<p>
+Developer → GitHub → Azure DevOps Pipeline → Agent → AWS EC2 → Nginx → Website
+</p>
+
+</div>
+
+<div class="section">
+<h2>Tools Used</h2>
+
+<ul style="list-style:none">
 <li>Git</li>
 <li>GitHub</li>
 <li>Azure DevOps Pipelines</li>
-<li>Self-hosted Linux Agent</li>
 <li>AWS EC2</li>
-<li>Nginx Web Server</li>
-<li>SSH & Rsync Deployment</li>
+<li>Nginx</li>
+<li>Rsync Deployment</li>
 </ul>
 
-<h2>Infrastructure</h2>
-<ul>
-<li>AWS EC2 Ubuntu Server</li>
-<li>Elastic IP for static public access</li>
-<li>Nginx configured as web server</li>
-<li>Domain configured via DNS</li>
-<li>SSL certificate using Let's Encrypt</li>
-</ul>
-
-<p><b>Deployment is fully automated using Azure DevOps CI/CD.</b></p>
+</div>
 
 </body>
 </html>
