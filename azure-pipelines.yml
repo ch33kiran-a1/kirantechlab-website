@@ -1,0 +1,14 @@
+trigger:
+- main
+
+pool:
+  name: Default
+
+steps:
+
+- checkout: self
+
+- script: |
+    echo "Starting deployment"
+    rsync -avz ./ ubuntu@65.0.230.85:/var/www/html/
+  displayName: Deploy Website to AWS EC2
